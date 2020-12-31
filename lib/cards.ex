@@ -88,8 +88,8 @@ defmodule Cards do
   """
   def create_hand(hand_size) do
     {hand, _rest_of_deck} = Cards.create_deck
-      |> Cards.shuffle
-      |> Cards.deal(hand_size)
+    |> Cards.shuffle
+    |> Cards.deal(hand_size)
 
     hand
   end
